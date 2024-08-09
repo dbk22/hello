@@ -1,0 +1,19 @@
+node
+{
+stage("clone")
+{
+git clone
+}
+stage("comile")
+{
+mvn comlipr
+}
+stage ("test")
+{
+mvn test
+}
+stage("package")
+{
+mvn package
+}
+
